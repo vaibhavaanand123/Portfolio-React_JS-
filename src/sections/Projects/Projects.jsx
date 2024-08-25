@@ -13,7 +13,7 @@ function Projects() {
 
             <div className={styles.projectsContainer}>
 
-                <div className={styles.projectLayout}> */
+                <div className={styles.projectLayout}>
                 <ProjectCard src={Q_calc} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'i.Calculator'}
                 p={'Stream '}/>
                  </div> 
