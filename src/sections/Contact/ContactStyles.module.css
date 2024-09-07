@@ -1,44 +1,45 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 25px;
-
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 100%; /* Ensure form is responsive */
+    margin: 0 auto; /* Center form horizontally */
 }
 
-textarea,input:not([type='submit']){
+textarea, input:not([type='submit']) {
     height: 50px;
     padding-left: 16px;
-    width: 250px;
+    width: 100%; /* Use full width of parent container */
+    max-width: 250px; /* Set maximum width */
 }
 
-textarea{
+textarea {
     padding-top: 16px;
     resize: none;
     height: 250px;
+    max-width: 100%; /* Ensure textarea is responsive */
 }
-input,textarea{
+
+input, textarea {
     border-radius: 20px;
-    border:  #888 1px solid;
+    border: 1px solid #888;
     box-sizing: border-box;
-    justify-self: center;
     background-color: var(--background-color);
     color: var(--form-text-color);
-
 }
 
-::placeholder{
+::placeholder {
     color: var(--form-text-color);
-
 }
 
-input[type='submit']{
+input[type='submit'] {
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
@@ -48,33 +49,35 @@ input[type='submit']{
     font-size: 20px;
     font-weight: bold;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out,transform 200ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     margin: auto;
-
+    cursor: pointer; /* Add pointer cursor for better UX */
 }
 
-input[type='submit']:hover{
+input[type='submit']:hover {
     transform: scale(1.05);
 }
 
-input[type='submit']:active{
+input[type='submit']:active {
     transform: translateY(2px);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-@media (width >=800px){
-    textarea,input:not([type='submit']){
-        width: 600px;
+/* Responsive Styles */
+@media (min-width: 800px) {
+    textarea, input:not([type='submit']) {
+        width: 100%;
+        max-width: 600px; /* Set maximum width */
         font-size: 20px;
     }
-    form{
+
+    form {
         gap: 40px;
-    } 
+    }
 }
 
-
-@media (width >=1400px){
-    textarea,input:not([type='submit']){
-        width: 800px;
+@media (min-width: 1400px) {
+    textarea, input:not([type='submit']) {
+        max-width: 800px; /* Set maximum width */
     }
 }

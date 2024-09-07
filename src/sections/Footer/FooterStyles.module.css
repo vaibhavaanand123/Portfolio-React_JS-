@@ -1,7 +1,27 @@
-.container{
+.container {
     text-align: center;
-    p{
-        font-size: 16px;
-        color: var(--footer-text-color);
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.container p {
+    font-size: 16px;
+    color: var(--footer-text-color);
+    margin: 0; /* Remove default margin to ensure consistent spacing */
+    line-height: 1.5; /* Improve readability with a better line height */
+    max-width: 800px; /* Limit the width for better readability on larger screens */
+    margin: 0 auto; /* Center the paragraph within its container */
+}
+
+@media (min-width: 800px) {
+    .container p {
+        font-size: 18px; /* Slightly larger font size on larger screens */
+        max-width: 900px; /* Adjust maximum width for better layout on larger screens */
+    }
+}
+
+@media (min-width: 1400px) {
+    .container p {
+        font-size: 20px; /* Further increase font size for very large screens */
+        max-width: 1000px; /* Adjust maximum width for very large screens */
     }
 }

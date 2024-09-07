@@ -1,32 +1,33 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     text-align: center;
 
-
-    span{
+    span {
         display: flex;
         align-items: center;
         gap: 5px;
     }
 
-    img{
+    img {
         width: 20px;
+        height: auto; /* Maintain aspect ratio */
     }
-
 }
 
-.skillList{
+.skillList {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 40px;
-    max-width: 26ch;
+    max-width: 100%; /* Ensure responsiveness */
     margin: auto;
     padding: 15px;
+    box-sizing: border-box; /* Include padding in the element’s total width and height */
 }
-hr{
+
+hr {
     width: 100px;
     height: 1px;
     border: none;
@@ -34,17 +35,18 @@ hr{
     margin: 30px auto;
 }
 
-@media (width >=800px){
-    .skillList{
-        max-width: fit-content;
+/* Responsive Styles */
+@media (min-width: 800px) {
+    .skillList {
+        max-width: 100%; /* Adjust to fit the content */
         gap: 30px;
 
-        p{
+        p {
             font-size: 20px;
         }
-
     }
-    hr{
+
+    hr {
         width: 300px;
     }
 }
