@@ -71,6 +71,11 @@ p {
 @media (min-width: 800px) {
     #root {
         gap: 100px;
+        margin-top: 50px;
+    }
+    html,body{
+        margin-top: 5vh;
+    
     }
 
     h1 {
@@ -94,6 +99,10 @@ p {
     #root {
         gap: 100px;
         width: 80%;
+    }
+    html,body{
+        margin-top: 8vh;
+      
     }
 
     h1 {
