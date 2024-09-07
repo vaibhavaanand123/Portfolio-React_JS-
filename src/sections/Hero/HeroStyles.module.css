@@ -81,7 +81,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-evenly;
-
+        margin-top: 20px;
 
         .hero{
             max-width: 350px;
