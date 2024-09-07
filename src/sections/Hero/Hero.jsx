@@ -1,7 +1,5 @@
 import styles from './HeroStyles.module.css'
 import heroImg from '../../assets/hero-img.png'
-import sun from '../../assets/sun.svg'
-import moon from '../../assets/moon.svg'
 import twitterLight from '../../assets/twitter-light.svg'
 import twitterDark from '../../assets/twitter-dark.svg'
 import githubLight from '../../assets/github-light.svg'
@@ -13,7 +11,6 @@ import {useTheme} from '../../common/ThemeContext'
 
 function Hero() {
     const { theme, toggleTheme } = useTheme();
-    const themeIcon= theme ==='light'? sun:moon;
     const twitterIcon= theme ==='light'? twitterLight:twitterDark;
     const githubIcon= theme ==='light'? githubLight:githubDark;
     const linkedinIcon= theme ==='light'? linkedinLight:linkedinDark;
@@ -23,8 +20,6 @@ function Hero() {
             <div className={styles.colorModeContainer}>
                 <img className={styles.hero} src={heroImg} alt="Profile picture of Vaibhav Anand" onClick={toggleTheme}/>
             
-                <img className={styles.colorMode} src={themeIcon} alt="Color mode icon" onClick={toggleTheme}
-                />
             </div>
 
             <div className={styles.info}>
@@ -33,7 +28,7 @@ function Hero() {
                 </h1>
                 <h2> Full Stack  Developer</h2>
                 <span>
-                    <a href="https://x.com/vaibhavanandav?t=QShY66Dc8TzlSmcUkABM1w&s=08 " target='_blank'>
+                    <a href="https://x.com/vaibhavanandav?t=QShY66Dc8TzlSmcUkABM1w&s=08 " target='_blank'  >
                     <img src={twitterIcon} alt="Twitter Icon " />
                     </a>
                     <a href="https://github.com/vaibhavaanand123" target='_blank'>
@@ -43,8 +38,7 @@ function Hero() {
                     <img src={linkedinIcon} alt="Linkedin Icon " />
                     </a>
                 </span>
-                <p className={styles.description}>A coding enthusiast with a passion for algorithms and problem-solving. Patience, dedication, and continuous learning drive my journey. As a competitive coder and designer
-                </p>
+                <p className={styles.description}>Accomplished Full Stack Developer proficient in Java, Spring Boot, React, REST APIs, Git, and SQL. Expert in delivering scalable, high-performance solutions, optimizing software for high-traffic environments, and driving business success.</p>
                 <a href={CV} download>
                     <button className="hover" >
                         Resume

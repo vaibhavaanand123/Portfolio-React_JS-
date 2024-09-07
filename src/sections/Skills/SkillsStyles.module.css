@@ -24,6 +24,7 @@
     row-gap: 40px;
     max-width: 26ch;
     margin: auto;
+    padding: 15px;
 }
 hr{
     width: 100px;

@@ -13,18 +13,19 @@ function Projects() {
 
             <div className={styles.projectsContainer}>
 
-                <div className={styles.projectLayout}>
+                
+
                 <ProjectCard src={Q_calc} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'i.Calculator'}
                 p={'Stream '}/>
-                 </div> 
-                <div className={styles.projectLayout}>
+               
+                
                 <ProjectCard src={Q_money} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'Stock Portfolio Analyzer'}
                 p={'Stream '}/>
-                </div>
-                <div className={styles.projectLayout}>
+              
+               
                 <ProjectCard src={X_url} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'XURL'}
                 p={'Stream '}/>
-                </div>
+               
 
 
 

@@ -8,7 +8,7 @@
     min-height: 500px;
 
     .hero{
-        max-width: 200px;
+        max-width: 200px;   
     }
 
     span{
@@ -45,6 +45,9 @@
         transition: box-shadow 200ms ease-in-out,transform 200ms ease-in-out;
 
     }
+    a:hover{
+        transform: scale(1.05);
+    }
 
     button:hover{
         transform: scale(1.05);
@@ -59,21 +62,9 @@
 .colorModeContainer{
     position: relative;
 }
-
-.colorMode{
-    position: absolute;
-    right: 0;
-    width: 25px;
-}
-
-.colorMode:hover{
-    cursor: pointer;
-}
-
 .description{
     max-width: 24ch;
     margin: auto;
-
 
 }
 

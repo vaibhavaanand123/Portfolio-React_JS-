@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
     --background-color: #fff;
     --btn-color: #0987f2;
@@ -17,11 +21,13 @@
     --form-text-color: #fff;
     --footer-text-color: #bbb;
 }
+
 body{
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
+    
 }
 
 #root{
@@ -61,7 +67,7 @@ p{
 }
 
 .sectionTitle{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .hover{
@@ -88,7 +94,8 @@ p{
 
 @media (width >=1400px){
     #root{
-        gap: 200px ;
+        gap: 100px ;
+        width: 80%;
     }
     h1{
         font-size: 48px;
