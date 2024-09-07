@@ -17,7 +17,6 @@ function Hero() {
 
   return (
     <section id='hero' className={styles.container}>
-        <div className='sectionTitle'></div>
             <div className={styles.colorModeContainer}>
                 <img className={styles.hero} src={heroImg} alt="Profile picture of Vaibhav Anand" onClick={toggleTheme}/>
             
