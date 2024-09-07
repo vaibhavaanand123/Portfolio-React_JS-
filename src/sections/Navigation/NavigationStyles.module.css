@@ -37,7 +37,8 @@
     background-color: var(--background-color);
     width: 100%;
   }
-  .navbarItems_colorMode_hamburger{
+  
+  .navbarItems_colorMode_hamburger {
     display: flex;
     align-items: center;
     list-style: none;
@@ -87,14 +88,15 @@
   .navHamburger:hover {
     transform: scale(1.1);
   }
-  .colorModeLine{
+  
+  .colorModeLine {
     width: 45px;
     height: 3px;
     background-color: var(--text-color);
     transition: transform var(--transition-duration);
     transform: rotate(90deg);
     transform-origin: center;
-    margin-left: 180px;
+    margin-left: 16px; /* Adjust this value as needed */
   }
   
   .navHamburgerLine {
@@ -157,7 +159,7 @@
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
-  @media screen and (max-width: 1200px) {
+  @media (max-width: 1400px) {
     .navbarItems {
       position: fixed;
       top: 70px;
@@ -187,7 +189,7 @@
     }
   }
   
-  @media screen and (max-width: 500px) {
+  @media (max-width: 800px) {
     .navHamburgerLine {
       width: 20px;
       height: 2px;
@@ -204,6 +206,54 @@
   
     .navbarContent {
       font-size: 16px;
+    }
+    .colorModeLine {
+        width: 35px;
+        height: 3px;
+    }
+    .colorMode {
+        width: 25px;
+        height: 25px;
+    }
+    .navbarItems {
+        position: fixed;
+        top: 0px;
+        right: 50;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .navHamburgerLine {
+      width: 12px;
+      height: 2px;
+    }
+  
+    .imgLogo {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .namely {
+      font-size: 12px;
+    }
+  
+    .navbarContent {
+      font-size: 16px;
+    }
+    .colorModeLine {
+        width: 25px;
+        height: 3px;
+    }
+    .colorMode {
+        width: 20px;
+        height: 20px;
+    }
+    .navbarItems {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        width: 100%;
     }
   }
   
