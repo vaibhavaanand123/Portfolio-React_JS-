@@ -18,11 +18,13 @@
     --footer-text-color: #bbb;
 }
 
+/* Body styles */
 body {
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px; /* Padding is more consistent than using margin-bottom */
 }
 
 #root {
@@ -37,30 +39,28 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-h2, h3, p {
-    font-family: 'Roboto Mono', monospace;
-}
-
-h1, h2 {
+/* Typography */
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(32px, 5vw, 48px); /* Dynamic font sizing */
     text-transform: uppercase;
 }
 
 h2, h3 {
-    font-size: 20px;
-}
-
-h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 32px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: clamp(20px, 3.5vw, 24px); /* Dynamic font size for h2/h3 */
 }
 
 p {
-    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: clamp(16px, 2.5vw, 20px); /* Dynamic sizing for paragraphs */
     font-weight: 300;
 }
 
+/* Section Title */
 .sectionTitle {
-    margin-bottom: 10px;
+    margin-bottom: clamp(10px, 2vw, 75px); /* Adjusts as per the screen */
 }
 
 .hover {
@@ -71,23 +71,9 @@ p {
 @media (min-width: 800px) {
     #root {
         gap: 100px;
-        margin-top: 50px;
     }
-    html,body{
+    html, body {
         margin-top: 5vh;
-    
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2, h3 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 20px;
     }
 
     .sectionTitle {
@@ -97,16 +83,10 @@ p {
 
 @media (min-width: 1400px) {
     #root {
-        gap: 100px;
         width: 80%;
     }
-    html,body{
+    html, body {
         margin-top: 8vh;
-      
-    }
-
-    h1 {
-        font-size: 48px;
     }
 
     .sectionTitle {

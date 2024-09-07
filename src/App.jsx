@@ -1,6 +1,5 @@
 
 import './App.css'
-// import {BrowserRouter as Router,Route,Routes } from "react-router-dom"
 import Contact from './sections/Contact/Contact'
 import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
