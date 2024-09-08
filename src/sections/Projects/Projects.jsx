@@ -15,8 +15,7 @@ function Projects() {
 
                 
 
-                <ProjectCard src={Q_calc} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'i.Calculator'}
-                p={'Stream '}/>
+               
                
                 
                 <ProjectCard src={Q_money} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'Stock Portfolio Analyzer'}
@@ -26,7 +25,8 @@ function Projects() {
                 <ProjectCard src={X_url} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'XURL'}
                 p={'Stream '}/>
                
-
+               <ProjectCard src={Q_calc} link={'https://github.com/vaibhavaanand123/Q_Calculator'} h3={'i.Calculator'}
+                p={'Stream '}/>
 
 
             </div>
