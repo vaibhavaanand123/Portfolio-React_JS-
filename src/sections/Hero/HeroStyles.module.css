@@ -5,9 +5,9 @@
     align-items: center; /* Center items horizontally */
     gap: 20px;
     text-align: center;
-    height: 100dvh; /* Use viewport height units */
+    height: auto; /* Use viewport height units */
     min-height: 500px;
-    padding: 0 20px; /* Add some padding for better responsiveness */
+    padding: 120px 0 20px 0; /* Add some padding for better responsiveness */
 
     .hero {
         max-width: 200px;
